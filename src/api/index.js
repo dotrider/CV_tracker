@@ -33,6 +33,7 @@ export const getCountries = async () => {
 
     const res = await axios.get(`${url}/countries`)
 
-    console.log('indexCountries', res.data)
-    return res.data
+    console.log('indexCountries', res.data.countries)
+
+    return res.data.countries.map(d => d.name)
 }

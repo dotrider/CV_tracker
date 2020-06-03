@@ -23,8 +23,8 @@ function App() {
   return (
     <div className={styles.container}>
       <Card data={data}/>
-      <Chart/>
       <CountryPicker/>
+      <Chart/>
     </div>
   );
 }
