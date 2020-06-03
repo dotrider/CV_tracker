@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 //Created Index file to import clean component structure
 import { Card, Chart, CountryPicker } from './Components'
 //styles => App.module.css file
@@ -8,10 +8,13 @@ import './App.css';
 
 function App() {
 
+  const [data, setData] = useState({})
+  console.log('data', data)
+
    useEffect(() => {
    const fetchData = async () =>{
     const data = await getData()
-    console.log(data)
+    setData(data)
    } 
    fetchData()
   }, [])
@@ -19,7 +22,7 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <Card/>
+      <Card data={data}/>
       <Chart/>
       <CountryPicker/>
     </div>
