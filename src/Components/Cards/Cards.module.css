@@ -1,0 +1,20 @@
+
+.container{
+    margin: 50px 0;
+}
+
+.card {
+    margin: 0 20px !important
+}
+
+.one {
+    border-bottom: 10px solid rgb(255, 247, 0);
+}
+
+.two {
+    border-bottom: 10px solid rgb(255, 115, 0);
+}
+
+.three {
+    border-bottom: 10px solid rgb(255, 0, 0);
+}
