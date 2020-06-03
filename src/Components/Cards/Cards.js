@@ -10,7 +10,7 @@ import cx from 'classnames'
 
 
 const Cards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
-
+//if no data => loading...
 if(!confirmed)return 'Loading..'
 
     console.log('cards', confirmed, recovered, deaths, lastUpdate)
@@ -23,6 +23,7 @@ if(!confirmed)return 'Loading..'
                             Infected
                         </Typography>
                         <Typography variant='h5'>
+                            {/* CountUp making wonders 🤩 */}
                             <CountUp
                                 start={0}
                                 end={confirmed.value}
