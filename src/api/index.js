@@ -18,7 +18,7 @@ export const getData = async () => {
 
 export const getDailyData = async () => {
 
-    const res = await axios(`${url}/daily`)
+    const res = await axios.get(`${url}/daily`)
     console.log('indexChart', res.data)
 
     return res.data.map((dd) => ({
@@ -27,4 +27,12 @@ export const getDailyData = async () => {
         date: dd.reportDate
     }))
 
+}
+
+export const getCountries = async () => {
+
+    const res = await axios.get(`${url}/countries`)
+
+    console.log('indexCountries', res.data)
+    return res.data
 }
