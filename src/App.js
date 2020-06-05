@@ -26,7 +26,6 @@ const getCountry = async (c) => {
   const getCountryData = await getData(c)
   console.log('app', getCountryData)
   setData(getCountryData)
- 
 }
 
 

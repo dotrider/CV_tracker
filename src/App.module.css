@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: rgb(189, 204, 248);
 }
 
 .container {
@@ -7,4 +7,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+/*Mobile responsive*/
+
+@media (max-width: 770px){
+.container {
+    margin: 0 10%;
+}
 }

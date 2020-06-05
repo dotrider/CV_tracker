@@ -18,3 +18,9 @@
 .three {
     border-bottom: 10px solid rgb(255, 0, 0);
 }
+
+@media (max-width: 770px ){
+    .card{
+        margin: 5% 0 !important;
+    }
+}
