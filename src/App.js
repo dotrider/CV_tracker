@@ -4,6 +4,7 @@ import { Card, Chart, CountryPicker } from './Components'
 //styles => App.module.css file
 import styles from './App.module.css'
 import { getData } from './api'
+import './reset.css';
 import './App.css';
 
 function App() {

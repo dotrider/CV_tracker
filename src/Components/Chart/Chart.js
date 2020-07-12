@@ -20,7 +20,7 @@ const Chart = ({data:{confirmed, recovered, deaths}, country}) => {
 
 
 
-    //Setting up BarChart
+    //Setting up BarChart => takes in countries info if selected
     const barChart = (
         confirmed?
             <Bar
